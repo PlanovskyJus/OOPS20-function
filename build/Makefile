@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named carrays
+
+# Build rule for target.
+carrays: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 carrays
+.PHONY : carrays
+
+# fast build rule for target.
+carrays/fast:
+	$(MAKE) -f CMakeFiles/carrays.dir/build.make CMakeFiles/carrays.dir/build
+.PHONY : carrays/fast
+
+#=============================================================================
 # Target rules for targets named scalar
 
 # Build rule for target.
@@ -122,6 +135,60 @@ scalar: cmake_check_build_system
 scalar/fast:
 	$(MAKE) -f CMakeFiles/scalar.dir/build.make CMakeFiles/scalar.dir/build
 .PHONY : scalar/fast
+
+carrays.o: carrays.cpp.o
+
+.PHONY : carrays.o
+
+# target to build an object file
+carrays.cpp.o:
+	$(MAKE) -f CMakeFiles/carrays.dir/build.make CMakeFiles/carrays.dir/carrays.cpp.o
+.PHONY : carrays.cpp.o
+
+carrays.i: carrays.cpp.i
+
+.PHONY : carrays.i
+
+# target to preprocess a source file
+carrays.cpp.i:
+	$(MAKE) -f CMakeFiles/carrays.dir/build.make CMakeFiles/carrays.dir/carrays.cpp.i
+.PHONY : carrays.cpp.i
+
+carrays.s: carrays.cpp.s
+
+.PHONY : carrays.s
+
+# target to generate assembly for a file
+carrays.cpp.s:
+	$(MAKE) -f CMakeFiles/carrays.dir/build.make CMakeFiles/carrays.dir/carrays.cpp.s
+.PHONY : carrays.cpp.s
+
+carrays_d.o: carrays_d.cpp.o
+
+.PHONY : carrays_d.o
+
+# target to build an object file
+carrays_d.cpp.o:
+	$(MAKE) -f CMakeFiles/carrays.dir/build.make CMakeFiles/carrays.dir/carrays_d.cpp.o
+.PHONY : carrays_d.cpp.o
+
+carrays_d.i: carrays_d.cpp.i
+
+.PHONY : carrays_d.i
+
+# target to preprocess a source file
+carrays_d.cpp.i:
+	$(MAKE) -f CMakeFiles/carrays.dir/build.make CMakeFiles/carrays.dir/carrays_d.cpp.i
+.PHONY : carrays_d.cpp.i
+
+carrays_d.s: carrays_d.cpp.s
+
+.PHONY : carrays_d.s
+
+# target to generate assembly for a file
+carrays_d.cpp.s:
+	$(MAKE) -f CMakeFiles/carrays.dir/build.make CMakeFiles/carrays.dir/carrays_d.cpp.s
+.PHONY : carrays_d.cpp.s
 
 scalar.o: scalar.cpp.o
 
@@ -184,8 +251,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... scalar"
 	@echo "... edit_cache"
+	@echo "... carrays"
+	@echo "... scalar"
+	@echo "... carrays.o"
+	@echo "... carrays.i"
+	@echo "... carrays.s"
+	@echo "... carrays_d.o"
+	@echo "... carrays_d.i"
+	@echo "... carrays_d.s"
 	@echo "... scalar.o"
 	@echo "... scalar.i"
 	@echo "... scalar.s"

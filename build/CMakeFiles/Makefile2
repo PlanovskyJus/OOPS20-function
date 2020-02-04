@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /mnt/c/Users/jplan/Documents/OOP/OOPS20-function/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/carrays.dir/all
 all: CMakeFiles/scalar.dir/all
 
 .PHONY : all
@@ -63,9 +64,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/carrays.dir/clean
 clean: CMakeFiles/scalar.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/carrays.dir
+
+# All Build rule for target.
+CMakeFiles/carrays.dir/all:
+	$(MAKE) -f CMakeFiles/carrays.dir/build.make CMakeFiles/carrays.dir/depend
+	$(MAKE) -f CMakeFiles/carrays.dir/build.make CMakeFiles/carrays.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/jplan/Documents/OOP/OOPS20-function/build/CMakeFiles --progress-num=1,2,3 "Built target carrays"
+.PHONY : CMakeFiles/carrays.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/carrays.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/jplan/Documents/OOP/OOPS20-function/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/carrays.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/jplan/Documents/OOP/OOPS20-function/build/CMakeFiles 0
+.PHONY : CMakeFiles/carrays.dir/rule
+
+# Convenience name for target.
+carrays: CMakeFiles/carrays.dir/rule
+
+.PHONY : carrays
+
+# clean rule for target.
+CMakeFiles/carrays.dir/clean:
+	$(MAKE) -f CMakeFiles/carrays.dir/build.make CMakeFiles/carrays.dir/clean
+.PHONY : CMakeFiles/carrays.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/scalar.dir
@@ -74,7 +103,7 @@ clean: CMakeFiles/scalar.dir/clean
 CMakeFiles/scalar.dir/all:
 	$(MAKE) -f CMakeFiles/scalar.dir/build.make CMakeFiles/scalar.dir/depend
 	$(MAKE) -f CMakeFiles/scalar.dir/build.make CMakeFiles/scalar.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/jplan/Documents/OOP/OOPS20-function/build/CMakeFiles --progress-num=1,2,3 "Built target scalar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/jplan/Documents/OOP/OOPS20-function/build/CMakeFiles --progress-num=4,5,6 "Built target scalar"
 .PHONY : CMakeFiles/scalar.dir/all
 
 # Build rule for subdir invocation for target.
