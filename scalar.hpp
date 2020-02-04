@@ -16,4 +16,7 @@ double pay(double hours, double rate);
 // pay based on hours and rate
 int pay(double hours, double rate, double& amount);
 
+// order two intergers
+void order(int& n1, int& n2);
+
 #endif

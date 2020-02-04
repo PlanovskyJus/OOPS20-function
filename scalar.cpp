@@ -41,3 +41,13 @@ int pay(double hours, double rate, double& amount) {
 
     return 0;
 }
+
+// order two intergers
+void order(int& n1, int& n2) {
+
+    if (n1 > n2) {
+        auto t = n1;
+        n1 = n2;
+        n2 = t;
+    }
+}

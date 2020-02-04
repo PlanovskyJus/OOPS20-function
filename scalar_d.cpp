@@ -42,7 +42,15 @@ int main() {
         // assert(pay(-10.0, 15.0) == -1);
         // assert(pay(10.0, -15.0) == -1);
         // assert(pay(-10.0, -15.0) == -1);
-
     }
+
+    {
+        int n1 = 5;
+        int n2 = 4;
+        order(n1, n2);
+        assert(n1 == 4);
+        assert(n2 == 5);
+    }
+
     return 0;
 }
