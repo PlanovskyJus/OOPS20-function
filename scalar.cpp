@@ -27,22 +27,17 @@ double pay(double hours, double rate) {
 }
 
 // pay based on hours and rate
-double pay2(double hours, double rate) {
+int pay(double hours, double rate, double& amount) {
 
-    if (hours >= 0 && rate >= 0)
-        return hours * rate;
-    else 
+    // hours cannot be negative
+    if (hours < 0)
         return -1;
-}
-
-// pay based on hours and rate
-double pay3(double hours, double rate) {
-
-    double result;
-    if (hours >= 0 && rate >= 0)
-        result = hours * rate;
-    else 
-        result = -1;
     
-    return result;
+    // rate cannot be negative
+    if (rate < 0)
+        return -1;
+
+    amount = hours * rate;
+
+    return 0;
 }
