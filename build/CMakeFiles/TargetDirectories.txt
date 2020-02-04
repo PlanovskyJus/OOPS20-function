@@ -1,0 +1,3 @@
+/mnt/c/Users/jplan/Documents/OOP/OOPS20-function/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/jplan/Documents/OOP/OOPS20-function/build/CMakeFiles/scalar.dir
+/mnt/c/Users/jplan/Documents/OOP/OOPS20-function/build/CMakeFiles/edit_cache.dir

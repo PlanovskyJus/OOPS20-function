@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/jplan/Documents/OOP/OOPS20-function/scalar.hpp
+
+/mnt/c/Users/jplan/Documents/OOP/OOPS20-function/scalar_d.cpp
+cassert
+-
+scalar.hpp
+/mnt/c/Users/jplan/Documents/OOP/OOPS20-function/scalar.hpp
+vector
+-
+

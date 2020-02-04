@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/scalar.dir/scalar_d.cpp.o CMakeFiles/scalar.dir/scalar.cpp.o  -o scalar 
